@@ -1,19 +1,22 @@
+#Desc -> A library for reading in 2D arrays of integers, doubles, or booleans from
+#standard input and printing them out to standard
+def arr(int1,int2):
 
-R = int(input("Enter the number of rows:"))
-C = int(input("Enter the number of columns:"))
-
-matrix = []
-print("Enter the entries rowwise:")
+	matrix = []
+	print("Enter the entries rowwise:")
 
 # For user input
-for i in range(R):
-	a =[]
-	for j in range(C):
+	for i in range(int1):
+		a =[]
+	for j in range(int2):
 		a.append(int(input()))
-	matrix.append(a)
+		matrix.append(a)
 
 # For printing the matrix
-for i in range(R):
-	for j in range(C):
-		print(matrix[i][j], end = " ")
-	
+	for i in range(int1):
+		for j in range(int2):
+			print(matrix[i][j], end = " ")
+
+a = int(input("Enter the number of rows:"))
+b = int(input("Enter the number of columns:"))
+ans = arr(a,b)
