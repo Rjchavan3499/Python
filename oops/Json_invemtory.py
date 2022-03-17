@@ -1,8 +1,6 @@
 import json
 
 data = {
-
-	"total": 1340,
 	"rice": [
 		{
 			"price_per_kg": 60,
